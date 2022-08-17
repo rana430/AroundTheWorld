@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --main-color:#7AB730;
+    --bg:white;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--main-color);
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg);
+}
+.heading{
+    color:var black;
+    padding-bottom: 4rem;
+    font-size: 4.5rem;
+}
+section{
+    padding:2rem 7%;
+}
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+
+}
+
+.header .logo img{
+    height: 5rem;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color:black;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.home{
+  min-height: 100vh;
+  display: flex;
+  background:url(https://media.istockphoto.com/photos/aria-waterfall-bubble-picture-id998731302?k=20&m=998731302&s=612x612&w=0&h=zgvEd-6X-tn6ceIbKLMPnnwsEuKKemDSvpLNR0Qe3NQ=) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .content{
+  max-width: 60rem;
+  max-height: 60rem;
+  margin-top: 26rem;
+
+}
+.home .content{
+  font-size: 5rem;
+  text-transform: capitalize;
+  color: black;
+}
+.about .content h3{
+  font-size: 40px;
+  font-family: monospace;
+  color: #7AB730;
+}
+.about .content p{
+  font-size: 30px;
+  color: black;
+ font-family: monospace;
+ padding-top: 6rem;
+ padding-bottom: 4rem;
+}
+.box a p{
+  font-size: 24px;
+  color: #7AB730;
+ font-family: monospace;
+}
+.continents .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.continents .box-container .box{
+    padding:3rem;
+    text-align: center;
+    border:var(--border);
+}
+
+.continents .box-container .box img{
+    height: 14rem;
+}
+
+
+.continents .box-container .box:hover{
+    background:lightgreen;
+}
