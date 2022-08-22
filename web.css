@@ -131,3 +131,93 @@ section{
 .continents .box-container .box:hover{
     background:lightgreen;
 }
+.container {
+    max-width: 85rem;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+.container img {
+    width: 900px;
+    height: 550px;
+    object-fit: cover;
+}
+
+.container .slider {
+    display: none;
+}
+
+.container .slider.active {
+    display: block;
+}
+
+.container .indicators {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 10rem;
+    position: absolute;
+     left: 50%;
+    transform: translateX(-50%);
+    bottom: -6%;
+}
+
+.container .indicators li {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: .1rem solid var(--main-color);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.container .indicators li.active {
+    background-color: var(--main-color);
+    border-color: black;
+    box-shadow: 0px 2px 13px 0px rgba(255 255 255 / 0.5);
+}
+
+.container .prev,
+.container .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: .3rem .3rem;
+    background-color: rgba(255 255 255 / .6);
+    cursor: pointer;
+}
+
+.container .prev {
+    left: 5%;
+}
+
+.container .next {
+    right: 1%;
+}
+
+.container .prev:hover,
+.container .next:hover {
+    background-color: rgba(255 255 255 / .8);
+}
+
+.container .prev i,
+.container .next i {
+    color: var(--main-color);
+    font-size: 5rem;
+}
+
+.fade {
+    animation: fade .4s ease-in-out;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
