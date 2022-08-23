@@ -10,6 +10,8 @@
     <meta name="description" content="this is a test page." />
     <meta name="Author" content="FCIS" />
 
+    <link rel="stylesheet" href="css\europe.css"/>
+
     <title> AROUND NOURTH AMIRICA</title>
     <style>
 
@@ -48,34 +50,32 @@
             margin-left: 250px;
             margin-bottom: 250px;
         }
-
-        header {
-            background: white;
+        .header {
+            background: var(--bg);
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 1.5rem 7%;
-            border-bottom: 1rem Solid rgba(225,255,255,.3);
-            ;
+            border-bottom: var(--border);
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
         }
 
-            header .logo img {
-                height: 2rem;
+            .header .logo img {
+                height: 5rem;
             }
 
-            header .navbar a {
+            .header .navbar a {
                 margin: 0 1rem;
                 font-size: 1.6rem;
                 color: black;
             }
 
-                header .navbar a:hover {
-                    color: #7AB730;
-                    border-bottom: .1rem solid #7AB730;
+                .header .navbar a:hover {
+                    color: var(--main-color);
+                    border-bottom: .1rem solid var(--main-color);
                     padding-bottom: .5rem;
                 }
 
@@ -85,16 +85,15 @@
 <body>
 
     <header class="header">
-        <a href="#" class="logo">
-            <img src="https://cdn4.vectorstock.com/i/thumb-large/05/38/travel-agency-logo-holiday-vacation-for-tourist-vector-34520538.jpg" alt="logo">
+        <a href="#" class="logo" ><i class="fa-duotone fa-globe"></i><span>Around The World</span>
         </a>
         <nav class="navbar">
-            <a href="#home">Home</a>
+            <a href="web.html">Home</a>
             <a href="#about">About</a>
             <a href="#continents">Continents</a>
-            <a href="#contact">Log in</a>
-        </nav>
-    </header>
+            <a href="#contact" class="fas fa-sign-in-alt">Log in</a>
+          </nav>
+        </header>
 
     <br /> <br /> <br />
 
@@ -104,7 +103,7 @@
 
     <div>
         <h2>.Yosemite National Park, California</h2>
-        <img src="yosemite.jpg" alt="error" />
+        <img src="images/torres.jpg" alt="error" />
         <p>
 
             It is located in California in the United States of America,
@@ -120,7 +119,7 @@
 
     <div>
         <h2>.Golden Gate Bridge, San Francisc</h2>
-        <img src="golden.jpg" alt="error" />
+        <img src="images/golden.jpg" alt="error" />
         <p>
 
             The Golden Gate Bridge, or the Golden Gate Bridge,
@@ -135,7 +134,7 @@
 
     <div>
         <h2>.Soar the Columbia River, the Pacific Ocean in the United States</h2>
-        <img src="columbia.jpg" alt="error" />
+        <img src="images/columbia.jpg" alt="error" />
 
         <p>
 
@@ -149,7 +148,7 @@
     <div>
         <h2>.The Rocky Mountains, British Columbia and New Mexico</h2>
 
-        <img src="rocky.jpg" alt="error" />
+        <img src="images/rocky.jpg" alt="error" />
         <p>
 
             It is a group of mountain ranges located in the west of the North American continent,

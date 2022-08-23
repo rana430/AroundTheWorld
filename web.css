@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root{
     --main-color:#7AB730;
@@ -7,7 +8,7 @@
 }
 
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
     outline: none; border:none;
@@ -46,6 +47,7 @@ body{
 }
 section{
     padding:2rem 7%;
+    margin-top: 6%;
 }
 .header{
     background: var(--bg);
@@ -106,6 +108,8 @@ section{
  padding-top: 6rem;
  padding-bottom: 4rem;
 }
+
+
 .box a p{
   font-size: 24px;
   color: #7AB730;
@@ -113,7 +117,7 @@ section{
 }
 .continents .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
     gap:1.5rem;
 }
 
