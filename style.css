@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 body{
     background-color: white;
     height: 495vh;
@@ -40,7 +42,6 @@ h1{
     position: absolute;
     padding: 10px;
     top: 220px;
-    font-family: monospace;
     width: 1075px;
     white-space: normal;
 }
@@ -49,7 +50,6 @@ h3{
     color: #7AB730;
     font-size: 50px;
     margin-left: 150px;
-    font-family: monospace, sans-serif;
     text-align: left;
     margin-top: 100px;
 }
@@ -68,25 +68,24 @@ h3{
     position: absolute;
     margin-left: 650px;
     padding: 18px;
-    font-family: monospace;
     width: 800px;
     white-space: normal;
 }
 .text{
-    top: 750px;
+    top: 760px;
 }
 .fa{
-    top: 1250px;
+    top: 1260px;
 }
 .mountain{
-    top: 1750px;
+    top: 1760px;
 }
 .town{
-    top: 2250px;
+    top: 2260px;
 }
 .lake{
-    top: 2750px;
+    top: 2760px;
 }
 .mara{
-    top: 3245px;
+    top: 3255px;
 }
