@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link rel="stylesheet" href="europe.css" />
+    <link rel="stylesheet" href="web.css" />
+    <style>
+      body {
+        background-image: url("ATW2.jpg");
+        background-color: #cccccc;
+      }
+      form {
+        text-align: center;
+      }
+
+      label,
+      input,
+      textarea {
+        font-size: 30px;
+        font-family: "Roboto", sans-serif;
+      }
+      label:hover {
+        color: var(--main-color);
+      }
+      .gen :hover {
+        color: var(--fnt);
+      }
+      label {
+        background-color: #ffffff;
+      }
+      input[type="submit"]:hover {
+        color: azure;
+        background-color: rgb(0, 140, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"
+        ><i class="fa-duotone fa-globe"></i><span>Around The World</span>
+      </a>
+      <nav class="navbar">
+        <a href="web.html">Home</a>
+        <a href="#about">About</a>
+        <a href="Europe.html">Europe</a>
+        <a href="#continents">Asia</a>
+        <a href="#continents">North America</a>
+        <a href="#continents">South America</a>
+        <a href="#continents">Australia</a>
+        <a href="#continents">Africa</a>
+        <a href="registration.html" class="fas fa-sign-in-alt">Registr</a>
+        <a href="login.html" class="fas fa-sign-in-alt">Log in</a>
+      </nav>
+    </header>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <form name="loginForm" onsubmit="return login()">
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter email" />
+      </div>
+      <div>
+        <br />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password" />
+      </div>
+      <br />
+      <input type="submit" placeholder="login" style="border-radius: 30rem" />
+    </form>
+    <script src="registr.js"></script>
+  </body>
+</html>
