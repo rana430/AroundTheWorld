@@ -294,7 +294,7 @@ section{
   text-align: center;
 }
 .country .place .img-overlay:hover .overlay{
-    top=0;
+    top:0;
 }
 
 
