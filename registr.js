@@ -62,10 +62,18 @@ function validateForm() {
       );
       document.inputForm.pass.focus();
       valid = false;
-    } else {
-      emailarray[3] = document.inputForm.em.value;
+    } /*else if (document.inputForm.pass.length() < 8) {
+      alert("Password must contain at least 8 characters");
+      document.inputForm.pass.focus();
+      valid = false;}*/ else {
+      /*emailarray[3] = document.inputForm.em.value;
       passwordarray[3] = document.inputForm.pass.value;
+      let key = "item";
+      localStorage.setItem(key, "document.inputForm.em.value");
+      let key2 = "it";
+      localStorage.setItem(key, "document.inputForm.pass.value");
 
+      //  localStorage.setItem(key2, "document.inputForm.pass.value");*/
       window.open("home.html");
 
       alert("Registered");
@@ -77,8 +85,6 @@ function validateForm() {
 
 function login() {
   if (
-    (document.loginForm.email.value == emailarray[0] &&
-      document.loginForm.password.value == passwordarray[0]) ||
     (document.loginForm.email.value == emailarray[1] &&
       document.loginForm.password.value == passwordarray[1]) ||
     (document.loginForm.email.value == emailarray[2] &&
@@ -87,6 +93,11 @@ function login() {
       document.loginForm.password.value == passwordarray[3])
   ) {
     window.open("home.html");
+  } else if (
+    document.loginForm.email.value == emailarray[0] &&
+    document.loginForm.password.value == passwordarray[0]
+  ) {
+    window.open("adminboard.html");
   } else {
     alert("Email or password is wrong");
   }
