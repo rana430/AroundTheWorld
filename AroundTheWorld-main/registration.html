@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--style sheet-->
+    <link rel="stylesheet" href="css/europe.css" />
+    <link rel="stylesheet" href="css/web.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!--End of style sheet-->
+    <title>Registration page.</title>
+
+    <!--style-->
+    <style>
+
+     body{
+      background: url("https://wallpapertag.com/wallpaper/full/8/7/e/221119-travel-background-1920x1080-laptop.jpg");
+      background-color: (0,0,0,0.9);
+      background-repeat: no-repeat;
+     }
+
+      form {
+        text-align: left;
+        margin-left: 3cm;
+      }
+
+      label,
+      input,
+      textarea {
+        font-size: 25px;
+        font-family: "Roboto", sans-serif;
+      }
+      label:hover {
+        color: var(--main-color);
+      }
+      .gen :hover {
+        color: var(--fnt);
+      }
+    </style>
+    <!--javascript-->
+  </head>
+
+  <body align="center">
+    <!-- start header-->
+    <header class="header">
+      <a href="#" class="logo"
+        ><i class="fa-duotone fa-globe"></i><span>Around The World</span>
+      </a>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="file:///E:/around%20the%20world/AroundTheWorld-main/web.html#continents">Continents</a>
+        
+        <a href="registration.html" class="fas fa-sign-in-alt">Registr</a>
+        <a href="login.html" class="fas fa-sign-in-alt">Login</a>
+      </nav>
+    </header>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!--form-->
+    <form name="inputForm" onsubmit="return validateForm()">
+      <div>
+        <label for="fn">First Name: </label>
+        <input type="text" placeholder="Enter first name" id="fn" />
+      </div>
+      <br />
+      <br />
+
+      <div>
+        <label for="ln">Last Name:</label>
+        <input type="text" placeholder="Enter last name" id="ln" />
+      </div>
+      <br />
+      <br />
+      <div>
+        <label for="em">Email:</label>
+        <input type="email" placeholder="Enter email" id="em" />
+      </div>
+      <br />
+      <br />
+      <div>
+        <label for="pass">Password:</label>
+        <input type="password" placeholder="Enter password" id="pass" />
+      </div>
+      <br />
+      <br />
+      <div>
+        <label for="msg">Message:</label>
+        <textarea placeholder="Enter message" id="msg"></textarea>
+      </div>
+      <br />
+      <br />
+      <div>
+        <label> gender :</label>
+        <br />
+        <input type="radio" name="genre" id="male" />
+        <label
+          style="background-color: rgb(250, 245, 245)"
+          class="gen"
+          for="male"
+          >male.</label
+        >
+        <br />
+        <input type="radio" name="genre" id="female" />
+        <label class="gen" for="female" style="background-color: rgb(250, 245, 245)"
+        class="gen"
+        for="male"
+        >female.</label>
+      </div>
+      <br />
+      <br />
+      <input type="submit" />
+    </form>
+    <br />
+    <footer>Copyright &copy; code and create , All reserved</footer>
+    <script src="registr.js"></script>
+  </body>
+</html>
